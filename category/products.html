@@ -1,0 +1,38 @@
+
+<div class="container pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2" data-toggle="tooltip" data-placement="top" title="Sản phẩm">{{title1}}</span></h2>
+        <div class="col-sm-3 ml-auto">
+            <div class="form-inline">
+                <label for="">Hiển thị:</label>
+                <select ng-change="repaginate()" ng-model="pageSize" convert-to-number  name="" id="pageSize" class="form-control">
+                  <option value="4">4</option>
+                  <option value="8">8</option>
+                  <option value="12">12</option>
+                  <option value="16">16</option>
+                </select> 
+            </div>
+        </div>
+    </div>
+    
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6  col-sm-12 pb-1" ng-repeat="p in products | orderBy:prop | limitTo:pageSize:begin">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="{{p.image}}" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <a href="detail.html">
+                        <h6 class="text-truncate mb-3">{{p.name}}</h6>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <h6>{{p.price}}</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="cart.html" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

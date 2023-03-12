@@ -1,0 +1,74 @@
+ <!-- Products Start -->
+ <div class="container pt-5" ng-controller="productCtrl">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5" data-toggle="tooltip" data-placement="top" title="Sản phẩm"><span class="px-2">Sản Phẩm Mới</span></h2>
+    </div>
+    
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1"  ng-repeat="p in products">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="{{p.image}}" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <a href="detail.html">
+                        <h6 class="text-truncate mb-3">{{p.name}}</h6>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <h6>{{p.price}}</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="cart.html" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+
+<!-- Offer Start -->
+<div class="container offer pt-5">
+    <div class="row px-xl-5">
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                <img src="img/img/gallery/milemskiiantiaging.png" alt="">
+                
+            </div>
+        </div>
+        <div class="col-md-6 pb-4">
+            <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                <img src="img/img/gallery/en-elixir20anshomepagedesktopeng-(1).png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Offer End -->
+
+<!-- Products Start -->
+<div class="container pt-5" ng-controller="productCtrl">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2" data-toggle="tooltip" data-placement="top" title="Sản phẩm">Sản Phẩm Bán Chạy</span></h2>
+    </div>
+    <div class="row px-xl-5 pb-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1" ng-repeat="p in products">
+            <div class="card product-item border-0 mb-4">
+                <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                    <img class="img-fluid w-100" src="{{p.image}}" alt="">
+                </div>
+                <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                    <a href="detail.html">
+                        <h6 class="text-truncate mb-3">{{p.name}}</h6>
+                    </a>
+                    <div class="d-flex justify-content-center">
+                        <h6>{{p.price}}</h6>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between bg-light border">
+                    <a href="cart.html" class="btn btn-sm text-dark p-0"><i class="fas fa-shopping-cart text-primary mr-1"></i>Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Products End -->
